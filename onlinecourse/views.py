@@ -99,9 +99,11 @@ class CourseDetailView(generic.DetailView):
         sample_size = 3
         if count_questions <= sample_size:
             sample_size = count_questions 
-        sample_question_ids = random.sample(question_ids, sample_size)
+        SAMPLE_QUESTION_IDS = random.sample(question_ids, sample_size)
 
-        context["question_list"] = current_course.question_set.filter(id__in=sample_question_ids)
+        context["question_list"] = current_course.question_set.filter(id__in=SAMPLE_QUESTION_IDS)
+        self.request.session['sample_question_ids'] = SAMPLE_QUESTION_IDS
+
         return context
     
     
@@ -148,6 +150,8 @@ def submit(request, course_id):
    for choice_id in submitted_answers:
        choice = Choice.objects.get(pk=choice_id)
        submission.choices.add(choice)
+   
+   #submission.question_ids = ".".join(extract_question_ids(request))
    submission.save()
    
    return HttpResponseRedirect(reverse(viewname='onlinecourse:exam_result', kwargs={'course_id': course_id, 'submission_id': submission.id}))
@@ -162,20 +166,26 @@ def show_exam_result(request, course_id, submission_id):
     context = {}
     course = Course.objects.get(pk=course_id)
     submission = Submission.objects.get(pk=submission_id)
-    selected_choices = submission.choices.all()
-    selected_ids = [choice.id for choice in selected_choices]
+    selected_ids = [choice.id for choice in submission.choices.all()]
+
+    SAMPLE_QUESTION_IDS = request.session['sample_question_ids']
+    question_list = course.question_set.filter(id__in = SAMPLE_QUESTION_IDS)
     
     score = 0
     total_score = 0
-    for question in course.question_set.all():
+    for question in question_list:
         success_question = question.is_get_score(selected_ids)
         total_score += question.grade 
         if success_question:
             score += question.grade
     
-    grade = (score / total_score)*100
+    grade = 0
+    if total_score != 0:
+        grade = round((score / total_score)*100, 2)
+    
     context['course'] = course
     context['selected_ids'] = selected_ids
+    context['question_list'] = question_list
     context['grade'] = grade
 
     return render(request, 'onlinecourse/exam_result_bootstrap.html', context)
