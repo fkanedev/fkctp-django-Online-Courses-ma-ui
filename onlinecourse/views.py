@@ -92,7 +92,7 @@ class CourseDetailView(generic.DetailView):
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
-        #Randomly pick 4 question ids from related course
+        #Randomly pick 3 question ids from related course
         current_course = get_object_or_404(Course, pk=self.kwargs['pk'])
         question_ids = [question.id for question in current_course.question_set.all()]
         count_questions = len(question_ids)
@@ -102,6 +102,7 @@ class CourseDetailView(generic.DetailView):
         SAMPLE_QUESTION_IDS = random.sample(question_ids, sample_size)
 
         context["question_list"] = current_course.question_set.filter(id__in=SAMPLE_QUESTION_IDS)
+        #let's save in the session the exam question ids, in order to call it back in the exam result view 
         self.request.session['sample_question_ids'] = SAMPLE_QUESTION_IDS
 
         return context
@@ -151,7 +152,6 @@ def submit(request, course_id):
        choice = Choice.objects.get(pk=choice_id)
        submission.choices.add(choice)
    
-   #submission.question_ids = ".".join(extract_question_ids(request))
    submission.save()
    
    return HttpResponseRedirect(reverse(viewname='onlinecourse:exam_result', kwargs={'course_id': course_id, 'submission_id': submission.id}))
@@ -179,6 +179,7 @@ def show_exam_result(request, course_id, submission_id):
         if success_question:
             score += question.grade
     
+    # to prevent ZeroDivision error...
     grade = 0
     if total_score != 0:
         grade = round((score / total_score)*100, 2)
