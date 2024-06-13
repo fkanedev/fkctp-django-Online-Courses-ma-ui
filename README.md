@@ -1,8 +1,8 @@
-![Python](https://img.shields.io/badge/Python-3.9-blue.svg)
-![Built with Django](https://img.shields.io/badge/Built%20with-Django-b5f05d.svg)
-[![Authentication with Django](https://img.shields.io/badge/Authentication%20with-Django-green.svg)](https://docs.djangoproject.com/en/stable/topics/auth/)
-[![Session Management with Django](https://img.shields.io/badge/Session%20Management-Django-yellow.svg)](https://docs.djangoproject.com/en/stable/topics/http/sessions/)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)
+![Built with Django](https://img.shields.io/badge/Built%20with-Django-brightgreen.svg)
+[![Authentication - Django](https://img.shields.io/badge/Authentication-Django-blue.svg)](https://docs.djangoproject.com/en/stable/topics/auth/)
+[![Session Management - Django](https://img.shields.io/badge/Session%20Management-Django-orange.svg)](https://docs.djangoproject.com/en/stable/topics/http/sessions/)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 # Online Course Application
 
