@@ -6,7 +6,7 @@
 
 # Online Course Application
 
-An online platform developed using Django for managing courses, user authentication, and student enrollment. It includes features for course creation, lesson management, and a planned assessment feature for evaluating students.
+An online platform developed using Django for managing courses, user authentication, and student enrollment. It includes features for course creation, lesson management, and an assessment feature for evaluating students.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -31,7 +31,7 @@ The primary objective of this project is to develop a comprehensive online cours
 - **Course Management**: Allows instructors to create, update, and manage courses efficiently.
 - **User Authentication**: Provides secure login and registration functionalities for users.
 - **Enrollment Management**: Enables students to enroll in courses, access course materials, and manage their enrollments.
-- **Assessment Feature**: (Planned) Integrates a system for instructors to create and manage assessments for their courses, allowing students to take and receive feedback on assessments.
+- **Assessment Feature**: Integrates a system for instructors to create and manage assessments for their courses, allowing students to take and receive feedback on assessments.
 
 ## Technologies Used
 
