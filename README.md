@@ -22,7 +22,7 @@ An online platform developed using Django for managing courses, user authenticat
 7. [License](#license)
 8. [Contact](#contact)
 
-## Introduction
+## 1. Introduction
 
 ### Project Objective
 The primary objective of this project is to develop a comprehensive online course management system using the Django framework. The system is designed to facilitate course creation, management, and student enrollment while ensuring robust user authentication and assessment capabilities.
@@ -33,7 +33,7 @@ The primary objective of this project is to develop a comprehensive online cours
 - **Enrollment Management**: Enables students to enroll in courses, access course materials, and manage their enrollments.
 - **Assessment Feature**: Integrates a system for instructors to create and manage assessments for their courses, allowing students to take and receive feedback on assessments.
 
-## Technologies Used
+## 2. Technologies Used
 
 ### Programming Languages
 - **Python**: The core language used for backend development with Django.
@@ -43,7 +43,7 @@ The primary objective of this project is to develop a comprehensive online cours
 - **SQLite**: A lightweight, disk-based database used for local development.
 - **Bootstrap**: Utilized for responsive front-end design.
 
-## Installation and Configuration
+## 3. Installation and Configuration
 
 ### Prerequisites
 Before setting up the project, ensure that you have the following installed on your local machine:
@@ -62,7 +62,7 @@ Before setting up the project, ensure that you have the following installed on y
    ```
 ### Environment Setup
 - Use manage.py for server management operations.
-## Usage
+## 4. Usage
 ### Running the Server
 To start the development server, navigate to the project directory and run:
    ```bash
@@ -73,7 +73,7 @@ This command will start the server at http://127.0.0.1:8000/.
 ### Accessing the Application
 Once the server is running, open your web browser and go to http://127.0.0.1:8000/ to access the application. You will be able to register as a new user, log in, and explore the course management features.
 
-## Development
+## 5. Development
 ### Project Structure
 - myproject/: The main Django project directory containing settings and configurations.
 - onlinecourse/: Contains the core application responsible for course-related functionalities.
@@ -118,7 +118,7 @@ The static directory contains all static files used in the project, such as:
 
 These files are served by Django during development and can be collected and served by a web server in a production environment.
 
-## Sources <a name="sources"></a>
+## 6. Sources <a name="sources"></a>
 
 - **Template: [IBM Developer Skills Network - Cloud App Development template](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database)**
 
@@ -126,11 +126,11 @@ These files are served by Django during development and can be collected and ser
   - **[Django Application Development with SQL and Databases](https://www.coursera.org/learn/developing-applications-with-sql-databases-and-django/home/week/5)**
   - **[IBM Full Stack Software Developer Professional Certificate](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)**
 
-## License <a name="license"></a>
+## 7. License <a name="license"></a>
 
 This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
 
-## Contact <a name="contact"></a>
+## 8. Contact <a name="contact"></a>
 
 ### Contact Information :
 
