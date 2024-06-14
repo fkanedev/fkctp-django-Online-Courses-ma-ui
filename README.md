@@ -79,7 +79,7 @@ Once the server is running, open your web browser and go to http://127.0.0.1:800
 - **static/** : Holds static files such as CSS and JavaScript. These files are served by Django during development and can be collected and served by a web server in a production environment.
 
 ### Templates
-The project uses Django's templating system for rendering HTML. The main templates include:
+The project uses Django's templating system for rendering HTML. Templates in [onlinecourse/templates/onlinecourse](https://github.com/fkanedev/fkctp-django-Online-Courses-ma-ui/blob/master/onlinecourse/templates/onlinecourse/course_detail_bootstrap.html) include:
 - **user_login_bootstrap.html** : A login form for user authentication.
 - **user_registration_bootstrap.html** : A registration form for new users.
 - **course_list_bootstrap.html** : Displays a list of available courses, including course titles and brief descriptions.
@@ -89,7 +89,7 @@ The project uses Django's templating system for rendering HTML. The main templat
 These templates are located in onlinecourse/templates/onlinecourse/ and leverage Django template tags and Bootstrap for styling and layout.
 
 ### Views
-View functions in onlinecourse/views.py handle HTTP requests and render appropriate templates. Key view functions include:
+View functions in [onlinecourse/views.py](https://github.com/fkanedev/fkctp-django-Online-Courses-ma-ui/blob/master/onlinecourse/views.py) handle HTTP requests and render appropriate templates. Key view functions include:
 - **views.registration_request** : Manages new user registration.
 - **views.login_request** and **views.logout_request** : Manages user authentication, login and logout process.
 - **views.CourseListView.as_view()** : Retrieves and displays a list of all courses.
@@ -101,7 +101,7 @@ View functions in onlinecourse/views.py handle HTTP requests and render appropri
 These views utilize Django's powerful request handling and template rendering capabilities to dynamically generate content based on user interactions and database queries.
 
 ### Models
-Django models in onlinecourse/models.py define the structure of the database tables. Key models include:
+Django models in [onlinecourse/models.py](https://github.com/fkanedev/fkctp-django-Online-Courses-ma-ui/blob/master/onlinecourse/models.py) define the structure of the database tables. Key models include:
 
 - **Course** : Represents a course with fields for name, image, description, publication date, instructors, and total enrollment. This model also includes a flag to check if the course is enrolled.  
 - **Lesson** : Represents individual lessons within a course, with fields for title, order, content, and associated course.
