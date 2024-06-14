@@ -79,7 +79,7 @@ Once the server is running, open your web browser and go to http://127.0.0.1:800
 - **static/** : Holds static files such as CSS and JavaScript. These files are served by Django during development and can be collected and served by a web server in a production environment.
 
 ### Templates
-The project uses Django's templating system for rendering HTML. Templates are located in [onlinecourse/templates/onlinecourse](https://github.com/fkanedev/fkctp-django-Online-Courses-ma-ui/blob/master/onlinecourse/templates/onlinecourse/course_detail_bootstrap.html) include:
+The project uses Django's templating system for rendering HTML. Templates are located in [onlinecourse/templates/onlinecourse](https://github.com/fkanedev/fkctp-django-Online-Courses-ma-ui/blob/master/onlinecourse/templates/onlinecourse) include:
 - **user_login_bootstrap.html** : A login form for user authentication.
 - **user_registration_bootstrap.html** : A registration form for new users.
 - **course_list_bootstrap.html** : Displays a list of available courses, including course titles and brief descriptions.
