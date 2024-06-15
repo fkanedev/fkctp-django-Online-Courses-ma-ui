@@ -27,15 +27,15 @@ This project involves developing an online platform using Django for managing co
 The primary objective of this project is to develop a comprehensive online course management system using the Django framework. The system is designed to facilitate course creation, management, and student enrollment while ensuring robust user authentication and assessment capabilities.
 
 ### Key Features
-- **Course Management** : Allows instructors to create, update, and manage courses efficiently.
-- **User Authentication** : Provides secure login and registration functionalities for users.
-- **Enrollment Management** : Enables students to enroll in courses, access course materials, and manage their enrollments.
-- **Assessment Feature** : Integrates a system for instructors to create and manage assessments for their courses, allowing students to take and receive feedback on assessments.
+- **`Course Management`** : Allows instructors to create, update, and manage courses efficiently.
+- **`User Authentication`** : Provides secure login and registration functionalities for users.
+- **`Enrollment Management`** : Enables students to enroll in courses, access course materials, and manage their enrollments.
+- **`Assessment Feature`** : Integrates a system for instructors to create and manage assessments for their courses, allowing students to take and receive feedback on assessments.
 
 ## 2. Technologies Used <a name="technologies-used"></a>
 
 ### Programming Languages
-- **Python**: The core language used for backend development with Django.
+- **Python** : The core language used for backend development with Django.
 
 ### Tools and Frameworks
 - **Django** : A high-level Python web framework that encourages rapid development and clean, pragmatic design.
@@ -117,9 +117,9 @@ The models are defined using Django's ORM, which provides a high-level abstracti
 
 ## 6. Sources <a name="sources"></a>
 
-- **Template: [IBM Developer Skills Network - Cloud App Development template](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database)**
+- **Template : [IBM Developer Skills Network - Cloud App Development template](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database)**
 
-- **Useful links**:
+- **Useful links** :
   - **[Django Application Development with SQL and Databases](https://www.coursera.org/learn/developing-applications-with-sql-databases-and-django/home/week/5)**
   - **[IBM Full Stack Software Developer Professional Certificate](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)**
 
