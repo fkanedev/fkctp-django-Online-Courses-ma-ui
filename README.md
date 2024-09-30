@@ -7,6 +7,10 @@
 # Online Course Application
 This project involves developing an online platform using Django for managing courses, user authentication, student enrollment and an assessment feature for evaluating students. It demonstrates the practical application of Django in a real-world scenario. It's part of my training in the [IBM Full Stack Software Developer Professional Certificate](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer) utilizing a [template](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database) provided by IBM Developer Skills Network.
 
+# Topics
+
+`Python`, `Django`, `Online Course Management`, `Authentication`, `Session Management`, `Student Enrollment`, `Assessment Feature`, `Course Management`, `SQLite`, `Bootstrap`, `Web Development`, `Django Models`, `Django Views`, `Django Templates`, `IBM Full Stack Software Developer Professional Certificate`, `Git`, `GitHub`, `REST API`, `ORM`, `MIT License`
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Technologies Used](#technologies-used)
